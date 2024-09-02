@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tailwind CSS</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav class="sticky top-0 px-48 py-5 bg-slate-100 border-b-2 border-gray-200 flex items-center justify-between">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhs3m74DjDOvXE7HIVJWITuFXQorky1j2m5A&s" alt=""
+      class="mr-5 w-40" />
+    <div class="mr-auto flex items-center space-x-5">
+      <a href="">Solutions</a>
+      <a href="">Pricing</a>
+      <a href="">Resources</a>
+      <a href="">What's new</a>
+    </div>
+
+    <div class="flex items-center space-x-5">
+      <a href="">Log in</a>
+      <a href="">
+        <button class="bg-black text-white font-bold px-5 py-2 rounded-full">
+          Start free trail
+        </button>
+      </a>
+    </div>
+  </nav>
+
+  <section class="bg-teal-100 flex flex-col items-center py-10">
+    <p class="bg-slate-300 w-fit px-2 py-1 rounded">
+      <span class="font-bold"> Offer: earn 1% of all sales </span> as
+      subscription credits, up to $10,000.
+      <span class="underline"> Learn more </span>
+    </p>
+    <p class="text-center mt-10 text-xl font-medium pt-3">PLANS & PRICING</p>
+    <h1 class="font-sans font-bold text-5xl font-helavica">
+      Start for free, then enjoy <br />
+      your first month for ₹20
+    </h1>
+    <div>
+      <p class="pt-3 text-xl">
+        Choose the best plan for your business. Change plans as you grow.
+      </p>
+
+      <form class="my-2 w-full">
+        <div class="relative">
+          <input type="Pay Monthly" id="email"
+            class="block rounded-full px-2.5 pb-2.5 pt-5 w-full text-sm text-gray-900 bg-white border-[1px] border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-purple-600 peer"
+            placeholder=" " />
+          <label for="email"
+            class="pl-2 absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-4 scale-75 top-4 z-10 origin-[0] start-2.5 peer-focus:text-black peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-4 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto">Enter
+            your email address</label>
+          <button class="bg-black text-white font-bold px-5 py-2 rounded-full absolute right-0 top-0 bottom-0 m-1">
+            Start free trail
+          </button>
+        </div>
+      </form>
+    </div>
+    <div class="pt-2 text-center pb-3 font-thin mb-2">
+      <p>
+        Try Shopify free, no credit card required. By entering your email,<br />
+        you agree to receive marketing emails from Shopify.
+      </p>
+    </div>
+  </section>
+
+  <!-- button pay -->
+  <div class="text-center mt-16 mb-6 border-[#45f298]">
+    <form method="get">
+      <label for="">Pay monthly</label>
+      <input type="text" name="Pay monthly" />
+      <label for="">Pay yearly (save 25%)*</label>
+      <input type="text" name="Pay yearly(25%)*" />
+    </form>
+  </div>
+
+  <!-- card  -->
+  <div class="flex flex-wrap space-x-4">
+    <div class="grid container ml-16 mr-16 px-6">
+      <div class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6">
+        <!-- card1 -->
+        <div class="border border-gray-200 rounded-lg shadow-lg w-full md:w-[56%]">
+          <!-- green -->
+          <div class="bg-[#45f298] text-center font-bold text-black py-4 rounded-t-lg">
+            ₹20 for your first month
+          </div>
+
+          <div class="flex mt-5 ml-4">
+            <h3 class="text-2xl font-bold">Basic</h3>
+            <span class="bg-[#45f298] ml-20 px-[10px] pr-1 py-2 text-xs text-center rounded-full font-bold">Most
+              Popular</span>
+          </div>
+
+          <p class="text-sm text-gray-500 ml-4 mb-4">
+            For solo entrepreneurs
+          </p>
+
+          <span class="mt-1 ml-4 flex flex-row">
+            <p class="text-5xl font-bold text-black mb-2">₹1,499</p>
+            <span class="mb-1 text-sm pt-1">INR <br />Month</span>
+          </span>
+          <p class="text-sm mb-4 pb-3 border-b-2 border-gray-100 ml-4">
+            billed once yearly
+          </p>
+
+          <p class="font-bold text-black ml-4 mt-4 text-md">
+            Card rates starting at
+          </p>
+
+          <ul class="text-sm mb-4 ml-4 space-y-2">
+            <li class="flex items-center mb-2 before:content-['✓'] before:text-black before:mr-2">
+              2% to 3rd-party payment providers
+            </li>
+            <p class="font-bold mt-4 ml-2 text-md text-black">
+              Standout features
+            </p>
+            <li class="flex items-center mb-2 before:content-['✓'] before:text-black before:mr-2">
+              10 inventory locations
+            </li>
+
+            <li class="flex items-center mb-2 before:content-['✓'] before:text-black before:mr-2">
+              24/7 chat support
+            </li>
+            <li class="flex items-center mb-2 before:content-['✓'] before:text-black before:mr-2">
+              Localized global selling (3 markets)
+            </li>
+            <li class="flex items-center mb-2 before:content-['✓'] before:text-black before:mr-2">
+              POS Lite
+            </li>
+          </ul>
+          <!-- button try free -->
+          <div class="mb-10 mx-6 pt-[284px]">
+            <button class="bg-black font-bold text-white py-2 px-4 rounded-full w-full">
+              Try for free
+            </button>
+          </div>
+        </div>
+        <!-- card2 -->
+        <div class="border border-gray-200 rounded-lg shadow-lg w-full md:w-[56%]">
+          <!-- green -->
+          <div class="bg-[#45f298] text-center font-bold text-black py-4 rounded-t-lg">
+            ₹20 for your first month
+          </div>
+
+          <div class="flex mt-5 ml-4">
+            <h3 class="text-3xl font-bold">Shopify</h3>
+          </div>
+
+          <p class="text-sm text-gray-500 ml-4 mb-4">For small teams</p>
+
+          <span class="mt-1 ml-4 flex flex-row">
+            <p class="text-5xl font-bold text-black mb-2">₹5,599</p>
+            <span class="mb-1 text-sm pt-1">INR <br />Month</span>
+          </span>
+          <p class="text-sm mb-4 pb-3 border-b-2 border-gray-100 ml-4">
+            billed once yearly
+          </p>
+
+          <p class="font-bold text-black ml-4 mt-4 text-md">
+            Card rates starting at
+          </p>
+
+          <ul class="text-sm mb-4 ml-4 space-y-2">
+            <li class="flex items-center mb-2 before:content-['✓'] before:text-black before:mr-2">
+              1% to 3rd-party payment providers
+            </li>
+            <p class="font-bold mt-4 ml-2 text-md text-black">
+              Standout features
+            </p>
+            <li class="flex items-center mb-2 before:content-['✓'] before:text-black before:mr-2">
+              10 inventory locations
+            </li>
+
+            <li class="flex items-center mb-2 before:content-['✓'] before:text-black before:mr-2">
+              24/7 chat support
+            </li>
+            <li class="flex items-center mb-2 before:content-['✓'] before:text-black before:mr-2">
+              Localized global selling (3 markets)
+            </li>
+            <li class="flex items-center mb-2 before:content-['✓'] before:text-black before:mr-2">
+              POS Lite
+            </li>
+          </ul>
+          <!-- button try free -->
+          <div class="mb-10 mx-6 pt-[284px]">
+            <button class="bg-black font-bold text-white py-2 px-4 rounded-full w-full">
+              Try for free
+            </button>
+          </div>
+        </div>
+
+        <!-- card3 -->
+
+        <div class="border border-gray-200 rounded-lg shadow-lg w-full md:w-2/3">
+          <!-- green -->
+          <div class="bg-[#45f298] text-center font-bold text-black py-4 rounded-t-lg">
+            ₹20 for your first month
+          </div>
+
+          <div class="flex mt-5 ml-4">
+            <h3 class="text-3xl font-bold">Advanced</h3>
+          </div>
+
+          <p class="text-sm text-gray-500 ml-4 mb-4">
+            As your business scales
+          </p>
+
+          <span class="mt-1 ml-4 flex flex-row">
+            <p class="text-5xl font-bold text-black mb-2">₹22,680</p>
+            <span class="mb-1 text-sm pt-1">INR <br />Month</span>
+          </span>
+          <p class="text-sm mb-4 pb-3 border-b-2 border-gray-100 ml-4">
+            billed once yearly
+          </p>
+
+          <p class="font-bold text-black ml-4 mt-4 text-md">
+            Card rates starting at
+          </p>
+
+          <ul class="text-sm mb-4 ml-4 space-y-2">
+            <li class="flex items-center mb-2 before:content-['✓'] before:text-black before:mr-2">
+              0.6% to 3rd-party payment providers
+            </li>
+
+            <p class="font-bold mt-4 ml-2 text-md text-black">
+              Standout features
+            </p>
+            <li class="flex items-center mb-2 before:content-['✓'] before:text-black before:mr-2">
+              Custom reports and analytics
+            </li>
+            <li class="flex items-center mb-2 before:content-['✓'] before:text-black before:mr-2">
+              10 inventory locations
+            </li>
+
+            <li class="flex items-center mb-2 before:content-['✓'] before:text-black before:mr-2">
+              Enhanced 24/7 chat support
+            </li>
+            <li class="flex items-center mb-2 before:content-['✓'] before:text-black before:mr-2">
+              Localized global selling (3 markets) + add markets for $59
+              USD/mo each
+            </li>
+            <li class="flex items-center mb-2 before:content-['✓'] before:text-black before:mr-2">
+              15 additional staff accounts
+            </li>
+            <li class="flex items-center mb-2 before:content-['✓'] before:text-black before:mr-2">
+              10x checkout capacity
+            </li>
+            <li class="flex items-center mb-2 before:content-['✓'] before:text-black before:mr-2">
+              POS Lite
+            </li>
+          </ul>
+          <!-- button try free -->
+          <div class="mb-10 mx-6 mt-[234px]">
+            <button class="bg-black font-bold text-white py-2 px-4 rounded-full w-full">
+              Try for free
+            </button>
+          </div>
+        </div>
+
+        <!-- card4 -->
+
+        <div class="border border-gray-200 rounded-lg shadow-lg md:w-2/3">
+          <!-- green -->
+          <div class="bg-blue-400 text-center font-bold text-white py-4 rounded-t-lg">
+            Available on a 1- or 3-year term
+          </div>
+
+          <div class="flex mt-5 ml-4">
+            <h3 class="text-3xl font-bold">Plus</h3>
+            <div class="pl-[166px] w-20 pr-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 24 24" id="shopify">
+                <path
+                  d="m14.49 20.937 5.381-1.166S17.93 6.633 17.914 6.546c-.016-.086-.086-.144-.158-.144s-1.439-.101-1.439-.101-.949-.949-1.064-1.05c-.027-.029-.057-.043-.086-.058l-.677 15.744zm.446-15.772c-.016 0-.043.014-.057.014-.016 0-.217.059-.533.158-.318-.919-.879-1.768-1.871-1.768h-.086c-.289-.361-.633-.519-.936-.519-2.316 0-3.426 2.892-3.77 4.359-.892.275-1.538.476-1.613.505-.504.158-.517.172-.574.648-.057.344-1.367 10.489-1.367 10.489l10.117 1.899.69-15.785zm-2.635.704v.102c-.559.173-1.178.36-1.783.547.346-1.323.992-1.972 1.553-2.217.146.375.23.878.23 1.568zm-.92-2.2c.1 0 .201.028.303.102-.732.344-1.539 1.222-1.871 2.978a59.11 59.11 0 0 1-1.411.432c.389-1.339 1.325-3.512 2.979-3.512zm.402 7.812s-.604-.315-1.322-.315c-1.08 0-1.123.676-1.123.849 0 .921 2.418 1.28 2.418 3.453 0 1.712-1.08 2.806-2.547 2.806-1.756 0-2.648-1.094-2.648-1.094l.475-1.554s.922.792 1.697.792a.693.693 0 0 0 .721-.69c0-1.209-1.986-1.268-1.986-3.252 0-1.669 1.195-3.295 3.627-3.295.936 0 1.395.272 1.395.272l-.707 2.028zm.922-7.281c.518.06.85.648 1.064 1.311-.258.087-.547.173-.863.273v-.187c0-.561-.072-1.022-.201-1.397z">
+                </path>
+              </svg>
+            </div>
+          </div>
+          <p class="text-sm text-gray-500 ml-4 mb-4">
+            For more complex businesses
+          </p>
+
+          <span class="mt-1 ml-4 flex flex-row">
+            <p class="text-5xl font-bold text-black mb-2">₹1,75,000</p>
+            <span class="mb-1 text-sm pt-1">INR <br />Month</span>
+          </span>
+          <p class="text-sm mb-4 pb-3 border-b-2 border-gray-100 ml-4">
+            on a 3-year term
+          </p>
+
+          <p class="font-bold text-black ml-4 mt-4 text-md">Card rates</p>
+
+          <ul class="text-sm mb-4 ml-4 space-y-2">
+            <li>Competitive rates for high-volume merchants</li>
+            <p class="font-bold mt-4 ml-2 text-md text-black">
+              Standout features
+            </p>
+            <li class="flex items-center mb-2 before:content-['✓'] before:text-black before:mr-2">
+              200 inventory locations
+            </li>
+
+            <li class="flex items-center mb-2 before:content-['✓'] before:text-black before:mr-2">
+              24/7 phone support
+            </li>
+            <li class="flex items-center mb-2 before:content-['✓'] before:text-black before:mr-2">
+              Localized global selling (50 markets)
+            </li>
+            <li class="flex items-center mb-2 before:content-['✓'] before:text-black before:mr-2">
+              Unlimited staff accounts
+            </li>
+            <li class="flex items-center mr-2 mb-2 before:content-['✓'] before:text-black before:mr-2">
+              Fully customizable checkout with 40x capacity
+            </li>
+            <li class="flex items-center mr-2 mb-2 before:content-['✓'] before:text-black before:mr-2">
+              200 POS Pro locations with Shopify Payments
+            </li>
+            <li class="flex items-center mb-2 before:content-['✓'] before:text-black before:mr-2">
+              Sell wholesale/B2B
+            </li>
+          </ul>
+          <!-- button try free -->
+          <div class="mt-[164px] mx-6 mb-[48px]">
+            <button class="bg-black font-bold text-white mt-12 py-2 px-4 rounded-full w-full">
+              Get in touch
+            </button>
+          </div>
+          <div class="text-center pb-[16px] font-bold text-base no-underline hover:underline">
+            <a href="https://www.shopify.com/in/plus?itcat=pricing_plan&itterm=learn_more">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="text-center text-gray-500 p-10 text-base">
+    *Yearly discount available on select plans
+  </p>
+  <!-- <div class="flex w-full justify-between px-4 py-5 text-left text-lg font-bold bg-white items-center">
+  <button class="font-bold text-base text-center text-black mb-5 border-black	rounded-full">
+    <span>Full list of features</span>
+</button>
+</div>  -->
+
+  <h1 class="font-bold text-3xl mb-6 text-left ml-[86px]">
+    What every plan gets you
+  </h1>
+  <!-- sections -->
+  <div class="flex flex-wrap space-x-4">
+    <div class="grid container ml-16 mr-16 px-6">
+      <div class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6">
+        <div class="border border-gray-200 rounded-lg shadow-lg md:w-[18%]">
+          <div class="pt-3 px-6">
+            <img src="https://cdn.shopify.com/b/shopify-brochure2-assets/9d36b48155c935d6912dc78f33dd84cc.svg" alt="" />
+          </div>
+          <div class="mr-3 ml-5">
+            <h2 class="font-bold text-base mr-2 mt-4">
+              World's best checkout
+            </h2>
+            <p class="text-gray-500 my-8">
+              Shopify checkout converts 15% better on average than other
+              commerce platforms.
+            </p>
+          </div>
+        </div>
+
+        <div class="border border-gray-200 mt-8 rounded-lg shadow-lg md:w-[18%]">
+          <div class="pt-3 px-6">
+            <img src="https://cdn.shopify.com/b/shopify-brochure2-assets/a0160a9073ac18b083d8d3ab2fd63866.svg" alt="" />
+          </div>
+          <div class="mr-3 ml-5 mb-2">
+            <h2 class="font-bold text-base mr-2 mt-4">In-person selling</h2>
+            <p class="text-gray-500 my-6">
+              Sell in person and keep inventory in sync with online sales—all
+              with
+            </p>
+            <div class="text-left pb-[4px] font-bold text-base no-underline hover:underline">
+              <a href="https://www.shopify.com/in/pos/pricing">shopify POS.</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="border border-gray-200 mt-8 rounded-lg shadow-lg md:w-[20%]">
+          <img src="https://cdn.shopify.com/b/shopify-brochure2-assets/9a0ec4dfb7a774bb3666745a58609900.svg" alt=""
+            class="pt-3 px-6" />
+          <div class="mr-3 ml-5 mb-2 mt-4">
+            <h2 class="font-bold text-base mr-2">Multiple sales channels</h2>
+            <p class="text-gray-500">
+              Promote and sell products on Instagram, TikTok, Google, and
+              other channels.
+            </p>
+          </div>
+        </div>
+
+        <div class="border border-gray-200 mt-8 rounded-lg shadow-lg md:w-[18%]">
+          <img src="https://cdn.shopify.com/b/shopify-brochure2-assets/6068938a5623e730c29fff2fbac436e4.svg" alt=""
+            class="pt-3 px-6" />
+          <div class="mr-3 ml-5 mb-2 mt-4">
+            <h2 class="font-bold text-base mr-2">In-depth analytics</h2>
+            <p class="text-gray-500">
+              Access reports to track store performance and identify
+              optimisation opportunities.
+            </p>
+          </div>
+        </div>
+
+        <div class="border border-gray-200 mt-8 rounded-lg shadow-lg md:w-[18%]">
+          <div class="pt-3 px-6">
+            <img src="https://cdn.shopify.com/b/shopify-brochure2-assets/3dff791cdf4e8c1a94c8df91a5531c48.svg" alt="" />
+          </div>
+          <div class="mr-3 ml-5 mb-2 mt-4">
+            <h2 class="font-bold text-base mr-2">Commerce apps</h2>
+            <p class="text-gray-500">
+              Use apps for everything from product sourcing to customizing
+              your store.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="bg-[#f4fafe] mt-12 mb-20">
+    <h1 class="font-bold text-5xl ml-[86px] pt-24 pb-24">
+      Alternative solutions for your <br />
+      business
+    </h1>
+
+    <div class="flex flex-wrap space-x-4">
+      <div class="grid container ml-16 mr-16 px-6">
+        <div class="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-6">
+          <div class="border border-gray-200 rounded-lg shadow-lg w-full md:w-[30%]">
+            <!-- green -->
+            <div class="bg-black text-center font-bold text-white py-4 rounded-t-lg">
+              ₹20 for your first month
+            </div>
+
+            <h1 class="font-bold text-2xl ml-6 pt-6">Starter</h1>
+            <div class="font-bold text-2xl ml-6 pt-4">
+              <span>₹399 INR/month</span>
+            </div>
+
+            <p class="ml-6 text-lg text-[#676767] mr-3 pt-3">
+              Sell instantly through social media and messaging apps or a
+              simple online store
+            </p>
+            <!-- button section -->
+            <div class="mx-6 mt-5 mb-11">
+              <button class="bg-black font-bold text-white py-2 px-6 rounded-full">
+                Learn more
+              </button>
+            </div>
+
+          </div>
+
+          <div class="border border-gray-200 rounded-lg shadow-lg w-full md:w-[30%]">
+            <!-- green -->
+            <div class="bg-[#45f298] text-center font-bold text-white py-4 rounded-t-lg">
+              ₹20 for your first month
+            </div>
+
+            <h1 class="font-bold text-2xl ml-6 pt-6">Retail</h1>
+            <div class="font-bold text-2xl ml-6 pt-4">
+              <span>₹7,000 INR/month</span>
+            </div>
+
+            <p class="ml-6 text-lg text-[#676767] mr-3 pt-3">
+              In-person selling tools with advanced
+              staff, inventory, and loyalty features
+            </p>
+            <!-- button section -->
+            <div class="mx-6 mt-5 mb-11">
+              <button class="bg-black font-bold text-white py-2 px-6 rounded-full">
+                Learn more
+              </button>
+            </div>
+
+          </div>
+          <div class="border border-gray-200 rounded-lg shadow-lg w-full md:w-[30%]">
+            <!-- green -->
+            <div class="bg-black text-center font-bold text-white py-4 rounded-t-lg">
+              Available upon request
+            </div>
+
+            <h1 class="font-bold text-2xl ml-6 pt-6">Enterprise commerce</h1>
+            <div class="font-bold text-2xl ml-6 pt-4">
+              <span>Custom pricing</span>
+            </div>
+
+            <p class="ml-6 text-lg text-[#676767] mr-3 pt-3">
+              Build agility, speed to deployment,
+              and performance for enterprise organizations
+            </p>
+            <!-- button section -->
+            <div class="mx-6 mt-5 mb-11">
+              <button class="bg-black font-bold text-white py-2 px-6 rounded-full">
+                Get in touch
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="text-center text-gray-400 text-base pb-16 my-5">
+      <span>
+        All payments will be billed in your selected currency.
+      </span>
+    </div>
+  </div>
+  </div>
+<!-- brands img -->
+
+  <h1 class="text-left pb-4 text-3xl font-bold ml-[86px]">
+    Join millions of merchants on Shopify
+  </h1>
+  <div class=" mt-8 border-b-2 ml-[86px] border-gray-300"></div>
+  
+
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 justify-items-center">
+
+  <div class="pr-7 pt-10 px-9 py-10 ">
+    <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/cms/logo-soup/en-IN/bajaao-f2a14e9beb29e6a1728e44f94057db8ee90b4d712c708e164f541153b22c8b8f.svg" 
+     alt=""  class="h-24"/>
+    </div>
+ 
+  <div class="pr-7 pt-10 px-9 py-10 ">
+    <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/cms/logo-soup/en-IN/mcaffeine-a5fd3895d022eb9c691c849057901ea2e58300ba04f0f4f2b417410a59cd3f2b.svg" 
+     alt="Coffin"  class="h-24"/>
+  </div>
+
+  
+  <div class="pr-7 pt-10 px-9 py-10 ">
+      <img  
+        src="" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/cms/logo-soup/en-IN/yoga-bar-b071057f99bdb76c16abfdb198ff71e4bff88bc6042160ed2a62033a2afe4607.svg"
+        alt=""  class="h-24"/>  
+  </div>
+ 
+
+    <div class="pr-7 pt-10 px-9 py-10 ">
+      <img src="" srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/cms/logo-soup/en-IN/nush-27894da00d42e7f5646b987c34adfa40ff7df5c1d40b9fb7060550b1598f723b.svg"
+        alt="nut"  class="h-24"/>
+    </div>
+  
+
+ 
+    <div class="pr-7 pt-10 px-9 py-10 ">
+        <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/cms/logo-soup/en-IN/john-jacobs-f84c517d865b1b427b1c9a8aa9e2f01088d85d5cf79838db483b44feddd69e1e.svg"
+        alt="john"  class="h-24"/>
+    </div>
+
+    <div class="pr-7 pt-10 px-9 py-10 ">
+        <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/cms/logo-soup/en-IN/vahdam-48c1f32cb734ab257a948a07b15b7759d32b2d9773d847df58dc58477506f960.svg"
+        alt=""  class="h-24" />
+    </div>
+
+    <div class="pr-7 pt-10 px-9 py-10 ">
+        <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/cms/logo-soup/en-IN/fable-street-5adec1448e9624a1310c00a6565cd6068a2b5ca65f03b8684ab04c058085fd34.svg"
+        alt="Yoga Bar" class="h-24" />
+    </div>
+
+ 
+    <div class="pr-7 pt-10 px-9 py-10 ">
+        <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/cms/logo-soup/en-IN/star-struck-994dbed8d2e992a0245b24ccb7c51e97ea1e01847e30034eb6107a27053c7ca8.svg"
+        alt="Yoga Bar"  class="h-24"/>
+    </div>
+</div>
+
+<div class=" mt-8 border-b-2 ml-[86px] border-gray-300"></div>
+
+
+
+</body>
+</html>
